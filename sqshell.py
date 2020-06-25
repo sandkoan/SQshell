@@ -97,7 +97,7 @@ def main(database):
     session = PromptSession(
         lexer=PygmentsLexer(SqlLexer),
         completer=sql_completer,
-        history=FileHistory('.sqlReplHistory'),
+        history=FileHistory('.sqshell_history'),
         auto_suggest=AutoSuggestFromHistory(),
         complete_in_thread=True,
         key_bindings=bindings,
