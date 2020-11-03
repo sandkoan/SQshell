@@ -1,0 +1,13 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+
+.sqshell_history
+
+# VS Code
+.vscode/
+
+# Intellij
+.idea/
+
+# C extensions
+*.so
