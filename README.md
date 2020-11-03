@@ -2,7 +2,7 @@
 
 ![](Sqshell.gif)
 
-This is an SQL REPL written in Python. It has syntax highlighting, fish-style history autocompletion, tab-completion for keywords, and VI or EMACS editing modes. 
+This is an SQL REPL written in Python. It has syntax highlighting, fish-style history autocompletion, tab-completion for keywords, and Vim/Emacs editing modes. 
 
 ## Install
 On Linux:
