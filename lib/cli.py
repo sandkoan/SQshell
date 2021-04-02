@@ -12,7 +12,7 @@ from lib.config import style, bindings, bottom_toolbar, multiline_bool, sql_comp
 
 def main(database):
     print("\nWelcome to Sqshell, an SQL REPL!\n")
-    connection = sqlite3.connect(database)
+    con = sqlite3.connect(database)
     session = PromptSession(
         lexer=PygmentsLexer(SqlLexer),
         completer=sql_completer,
@@ -34,17 +34,16 @@ def main(database):
             ]
             text = session.prompt(message, style=style)
         except KeyboardInterrupt:
-            continue  # Control-C pressed. Try again.
+            continue
         except EOFError:
-            break  # Control-D pressed.
+            break
 
-        with connection:
+        with con:
             try:
-                messages = connection.execute(text)
+                messages = con.execute(text)
             except Exception as e:
                 print(repr(e))
             else:
-                for message in messages:
-                    print(message)
+                [print(m) for m in messages]
 
-    print("Goodbye!")
+    print("Goodbye...!")
