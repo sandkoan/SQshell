@@ -1,6 +1,6 @@
 # SQshell
 
-![demo](https://user-images.githubusercontent.com/47906753/113491378-2e1ac680-9485-11eb-8b2a-38b665d3446b.mp4)
+[demo](https://user-images.githubusercontent.com/47906753/113491378-2e1ac680-9485-11eb-8b2a-38b665d3446b.mp4)
 
 This is an SQL REPL written in Python. It has syntax highlighting, fish-style history autocompletion, tab-completion for keywords, and Vim/Emacs editing modes. 
 
